@@ -1,0 +1,11 @@
+.home-page {
+  display: flex;
+}
+
+.home-page__sidebar {
+  flex: 2;
+}
+
+.home-page__content {
+  flex: 10;
+}
