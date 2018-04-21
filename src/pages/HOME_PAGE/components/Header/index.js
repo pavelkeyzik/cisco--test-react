@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./index.css";
+import styles from "./index.scss";
 import { AppContext } from "../../../../contexts/app-context";
 
 export default class Header extends Component {
@@ -7,8 +7,8 @@ export default class Header extends Component {
     return (
       <AppContext.Consumer>
         {context => (
-          <header className="header">
-            <div className="header__greeting">
+          <header className={styles.header}>
+            <div>
               Hello, {context.authorizedUserName}
             </div>
           </header>
